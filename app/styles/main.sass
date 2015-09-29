@@ -1,0 +1,280 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
+
+// bower:scss
+@import bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss
+// endbower
+
+$verde  : #98CB02
+$azul   : #4FC8E7
+$fucsia : #DA86B8
+
+// /* Everything but the jumbotron gets side spacing for mobile first views */
+// .header,
+// .marketing,
+// .footer
+//   padding-left: 15px
+//   padding-right: 15px
+
+
+// /* Custom page header */
+// .header
+//   border-bottom: 1px solid #e5e5e5
+
+//   /* Make the masthead heading the same height as the navigation */
+//   h3
+//     margin-top: 0
+//     margin-bottom: 0
+//     line-height: 40px
+//     padding-bottom: 19px
+
+
+
+// /* Custom page footer */
+// .footer
+//   padding-top: 19px
+//   color: #777
+//   border-top: 1px solid #e5e5e5
+
+
+// .container-narrow > hr
+//   margin: 30px 0
+
+
+// /* Main marketing message and sign up button */
+// .jumbotron
+//   text-align: center
+//   border-bottom: 1px solid #e5e5e5
+//   .btn
+//     font-size: 21px
+//     padding: 14px 24px
+
+
+
+// /* Supporting marketing content */
+// .marketing
+//   margin: 40px 0
+//   p + h4
+//     margin-top: 28px
+
+
+
+// /* Responsive: Portrait tablets and up */
+// @media screen and (min-width: 768px)
+//   .container
+//     max-width: 730px
+
+
+//   /* Remove the padding we set earlier */
+//   .header,
+//   .marketing,
+//   .footer
+//     padding-left: 0
+//     padding-right: 0
+
+
+//   /* Space out the masthead */
+//   .header
+//     margin-bottom: 30px
+
+
+//   /* Remove the bottom border on the jumbotron for visual effect */
+//   .jumbotron
+//     border-bottom: 0
+
+
+.mfp-close-btn-in .mfp-close
+  display: none
+  color: $verde
+  z-index: 1
+
+.mfp-bg
+  background: rgba(19, 19, 19, 0.46)
+
+
+#restrictions
+  h1
+    font-weight: 400
+  font-weight: 300
+  color: white
+  z-index: 2
+  display: none
+  position: absolute
+  top: 0
+  right: 0
+  width: 50%
+  background-color: #FE8251
+  padding: 10px 15px 0px 15px
+  height: 100%
+  -webkit-transition: all 0.3s ease
+  -moz-transition: all 0.3s ease
+
+  a
+    color: white
+    text-decoration: none
+
+  .close-btn
+    background-color: white
+    color: #FE8251
+    padding: 8px
+    position: absolute
+    bottom: 10px
+    right: 45%
+
+  ul
+    margin-bottom: 45px
+
+#test-popup
+  font-family: 'Roboto', sans-serif
+
+.white-popup
+  position: relative
+  background: #FFF
+  width: auto
+  max-width: 920px
+  margin: 20px auto
+  background-image: url("../images/background-with-girl.jpg")
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+
+  -webkit-transition: all 0.3s ease
+  -moz-transition: all 0.3s ease
+
+  img
+    padding: 0
+
+  .modal-body
+    // position: absolute
+    height: 100%
+    // right: 0
+    // background-image: url("../images/symphony.png")
+    padding: 35px 15px 0px 15px
+
+    .brand
+      margin-bottom: 30px
+
+    .heading
+      margin-bottom: 40px
+
+    h1
+      margin: 0
+      font-weight: 400
+      color: $verde
+      font-size: 30px
+
+    hr
+      margin: 5px 0px
+
+    h2
+      margin: 0
+      font-weight: 900
+      color: $azul
+      font-size: 70px
+    p
+      color: $azul
+      font-size: 12px
+      font-weight: 500
+
+    .buttons
+      margin-bottom: 60px
+      margin-top: 30px
+      .secondary
+        font-size: 15px
+        display: inline-block
+      a
+        text-decoration: none
+        margin-right: 2%
+        // display: block
+        font-size: 16px
+        font-weight: 300
+        color: white
+        background-color: #FE8251
+        border: 1px solid transparent
+        padding: 8px
+        margin-bottom: 20px
+        -webkit-transition: all 0.3s ease
+        -moz-transition: all 0.3s ease
+
+        &:hover
+          cursor: pointer
+          background-color: lighten( #FE8251, 5% )
+          box-shadow: 2px 2px 1px #888888
+        &:active
+          background-color: darken( #FE8251, 2% )
+
+    .terms-anchor
+      font-size: 10px
+      position: absolute
+      bottom: 10px
+      right: 0
+      width: 100%
+
+@media only screen and (max-width: 880px)
+  #restrictions
+    h1
+      font-size: 20px
+    font-size: 12px
+
+@media only screen and (max-width: 690px)
+  #restrictions
+    h1
+      font-size: 20px
+    font-size: 10px
+
+@media only screen and (max-width: 640px)
+  .white-popup
+    .modal-body
+      padding-top: 35px
+      h1
+        font-size: 20px
+      h2
+        font-size: 40px
+      p
+        font-size: 12px
+      .heading
+        margin-bottom: 20px
+
+      .buttons
+        .secondary
+          font-size: 10px
+        a
+          font-size: 12px
+          margin-bottom: 15px
+
+@media only screen and (max-width: 650px)
+  #restrictions
+    h1
+      font-size: 20px
+    font-size: 8px
+
+@media only screen and (max-width: 440px)
+  .white-popup
+    .modal-body
+      padding-top: 35px
+      h1
+        font-size: 15px
+      h2
+        font-size: 25px
+      p
+        font-size: 8px
+      .heading
+        margin-bottom: 15px
+
+      .buttons
+        .secondary
+          font-size: 7px
+        a
+          font-size: 10px
+          margin-bottom: 10px
+
+// @media only screen and (max-width: 520px)
+//   #restrictions
+//     h1
+//       font-size: 15px
+//     font-size: 10px
+
+@media only screen and (max-width: 454px)
+  #restrictions
+    h1
+      font-size: 15px
+    font-size: 6px
